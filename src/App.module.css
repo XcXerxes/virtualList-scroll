@@ -1,0 +1,11 @@
+.wrapper{
+  overflow-x: auto;
+}
+
+.container {
+  position: relative;
+}
+.placeholder {
+  position: absolute;
+  width: 100%;
+}
