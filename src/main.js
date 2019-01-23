@@ -5,5 +5,7 @@ import './index.css'
 import {of, Rx} from 'rxjs'
 
 const data =  Array.from({length: 50}).map((_, i) => i)
-debugger
-ReactDOM.render(<App propsData={of(data)}  />, document.getElementById('root'))
+ReactDOM.render(<App 
+  data$={of(data)} options$={of({height: 60})}  
+  style={{height: 400, border: '1px solid #f2f2f2'}}
+  />, document.getElementById('root'))
